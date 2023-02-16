@@ -8,7 +8,9 @@ Function [N,NN,D,c,cc,Dcrit,Tw,lambd,mu,err,iter]=asignacioncantidades(q,Delta,D
 
 Arguments:
 1) q is the matrix which indicates the repartition of the cars in the path of the network. More precisely, if a is an arc which belongs to the path p, then q_{pa} is the number of cars in arc a divided by the number of car in path p. If the arc a does not belong to the path p, then q_{pa}=0. The matrix q can be optimized in a bilevel programming.
-3) 
+2) Delta is the incidence matrix between paths and arcs, that is, Delta_{pa}=1 if the arc a belongs to the path p, Delta_{pa}=0 if not.
+3) Deltaw is the incidence matrix between pairs origin-destination and path, that is, Deltaw_{wp}=1 if the path p joins the pair origin-destination w, Deltaw_{wp}=0 if not.
+4) 
 
 
 
