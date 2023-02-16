@@ -16,7 +16,16 @@ Arguments of the function:
 7) DN is the vectors of numbers of cars travelling between each pair origin-destination.
 
 Image of the function:
-1) N is the vector of numbers of cars travelling 
+1) N is the vector of numbers of cars travelling in each path.
+2) NN is the vector of numbers of cars travelling in each arc. We have the relation N = q*NN.
+3) D is the density of cars in each arc, D_a=NN_a/l_a.
+4) c is the vector of the time travel in each path.
+5) cc is the vector of the time travel in each arc. We have c=Delta*cc.
+6) Dcrit is the density which maximizes the flow in each arc, it is given by Dcrit_a = alpha_a/(2*beta_a).
+7) lambd is the Lagrange multiplier associated with the satisfaction of the demand, it can be interpreted as a marginal cost with respect to the number of cars travelling between each pair origin-destination.
+8) mu is the Lagrange multiplier associated with the nonnegativity of the number of cars travelling on each path. It can be interpreted as an extra cost for travelling the unused path (mu_p=0 if N_p>0).
+9) err is the norm of the gap function associated to the Wardrop Equilibrium.
+10) iter is the number of iterations.
 
 
 
