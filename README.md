@@ -4,6 +4,12 @@ Given a network transportation, this code computes two Wardrop Equilibrium, one 
 cars taken in an instant divided by the length of the arc), the other one based on flow of vehicles of cars as classical. The approach based on density allows 
 for more realistic cost functions. 
 
+Function [N,NN,D,c,cc,Dcrit,Tw,lambd,mu,err,iter]=asignacioncantidades(q,Delta,Deltaw,alpha,beta,l,L,R,P,DN,Dtilde):
+
+Arguments:
+1) q is the matrix which indicates the repartition of the cars in the path of the network. More precisely, if a is an arc which belongs to the path p, then q_{pa} is the number of cars in arc a divided by the number of car in path p. If the arc a does not belong to the path p, then q_{pa}=0. The matrix q can be optimized in a bilevel programming.
+3) 
+
 
 
 Transport1.m , Transport2.m , Transport3.m , Transport4.m , Transport5.m : different configuration of the traffic network.
