@@ -27,6 +27,12 @@ Image of the function:
 9) err is the norm of the gap function associated to the Wardrop Equilibrium.
 10) iter is the number of iterations.
 
+Function [F,FF,cF,ccF,lamb,mu,err]=asignacionflujos(Delta,Deltaw,alpha,beta,l,L,R,P,Tw,Hcost):
+
+The arguments are the same than previous function except the following:
+1) Tw is the vector of flows between the pairs origin-destinations.
+3) Hcost 
+
 
 
 Transport1.m , Transport2.m , Transport3.m , Transport4.m , Transport5.m : different configuration of the traffic network.
